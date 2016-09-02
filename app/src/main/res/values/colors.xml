@@ -6,6 +6,8 @@
     <color name="accent_color">#ffffff</color>
     <color name="backgroud_title">#82c349</color>
     <color name="background_btn_dialog_address">#4990e2</color>
+    <color name="theme">#ff00bfff</color>
+    <color name="background_language">#e4e4e4</color>
     //
     <color name="background_search">#f4f4f4</color>
     <color name="color_text_search">#b9b9bb</color>

@@ -40,10 +40,6 @@ public class CustomPagerAdapter extends PagerAdapter {
     public Object instantiateItem(ViewGroup container, int position) {
         View itemView = mLayoutInflater.inflate(R.layout.custom_viewpager, container, false);
         ImageView imageView = (ImageView) itemView.findViewById(R.id.imageView_custom);
-        //get height and width screen
-//        int width = getWindowManager().getDefaultDisplay().getWidth();
-//        int height = getWindowManager().getDefaultDisplay().getHeight();
-        //end
         imageView.setImageResource(mResources.get(position));
         container.addView(itemView);
         return itemView;
