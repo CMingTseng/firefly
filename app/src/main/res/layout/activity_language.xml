@@ -1,12 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/language"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="redix.firefly.LanguageActivity">
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
 
-</RelativeLayout>
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/menu_top"
+            android:layout_below="@+id/menu_top_language"
+            android:layout_centerHorizontal="true" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:id="@+id/linearlayout_language"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <me.xiaopan.psts.PagerSlidingTabStrip
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/language_tab"
+            app:slidingBlock="@drawable/image_sliding_block">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/text_slidingTabTitle"
+                    android:text="English"/>
+                <TextView
+                    style="@style/text_slidingTabTitle"
+                    android:text="Japanese"/>
+                <TextView
+                    style="@style/text_slidingTabTitle"
+                    android:text="for kids"/>
+                <TextView
+                    style="@style/text_slidingTabTitle"
+                    android:text="Chinese"/>
+                <TextView
+                    style="@style/text_slidingTabTitle"
+                    android:text="Korean"/>
+                <TextView
+                    style="@style/text_slidingTabTitle"
+                    android:text="French"/>
+            </LinearLayout>
+        </me.xiaopan.psts.PagerSlidingTabStrip>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager_language"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.gigamole.navigationtabbar.ntb.NavigationTabBar
+        android:id="@+id/ntb_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="bottom"
+        app:ntb_badge_size="12sp"
+        app:ntb_badge_bg_color="#ffff0000"
+        app:ntb_badge_gravity="top"
+        app:ntb_badge_position="left"
+        app:ntb_badge_title_color="#ffffffff"
+        app:ntb_badge_use_typeface="true"
+        app:ntb_badged="true"
+        app:ntb_typeface="fonts/agency.ttf"/>
+
+</android.support.design.widget.CoordinatorLayout>
