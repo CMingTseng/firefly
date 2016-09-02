@@ -1,14 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:layout_width="80dp"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@color/background_language">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/dot_light_screen2">
+    <RelativeLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/imageView7"
+        android:id="@+id/relativeLayout3"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:id="@+id/image_custom_recycler_listclass"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/slide2"
+            android:scaleType="fitXY"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/slide1" />
+        android:layout_alignBottom="@+id/relativeLayout3"
+        android:layout_margin="5dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView8"
+            android:src="@android:drawable/btn_star" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView9"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/btn_star_big_on" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/relativeLayout3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sữa Hàn Quốc Cao Cấp"
+            android:id="@+id/txt_title_custom_recycler_listclass"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/color_text_location"
+            android:padding="4dp"
+            android:minLines="1"
+            android:ellipsize="end"
+            android:focusableInTouchMode="true"
+            android:singleLine="true"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minh Khai,Hà Nôi"
+            android:id="@+id/txt_address_custom_reclycler_listclass"
+            android:layout_below="@+id/txt_title_custom_recycler_listclass"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/color_text_search"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9000000"
+            android:id="@+id/txt_price_custom_recyler_listclass"
+            android:layout_below="@+id/txt_address_custom_reclycler_listclass"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:layout_marginLeft="5dp" />
+    </RelativeLayout>
+</RelativeLayout>
 </RelativeLayout>
