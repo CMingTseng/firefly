@@ -92,8 +92,10 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/recycle_listclass"
-            android:layout_margin="10dp"
-            tools:listitem="@layout/custom_recycler_listclass">
+            tools:listitem="@layout/custom_recycler_listclass"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp">
         </android.support.v7.widget.RecyclerView>
     </LinearLayout>
         </LinearLayout>

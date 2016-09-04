@@ -68,12 +68,12 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
             android:textColor="@color/color_text_location"
-            android:padding="4dp"
             android:minLines="1"
             android:ellipsize="end"
             android:focusableInTouchMode="true"
             android:singleLine="true"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -85,10 +85,10 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:padding="5dp"
             android:singleLine="true"
             android:textColor="@color/color_text_search"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -100,8 +100,8 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
-            android:padding="5dp"
-            android:layout_marginLeft="5dp" />
+            android:layout_marginLeft="5dp"
+            android:textSize="12sp"/>
     </RelativeLayout>
 </RelativeLayout>
 </RelativeLayout>

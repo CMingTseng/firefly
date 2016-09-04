@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/club"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/linearlayout_club"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <me.xiaopan.psts.PagerSlidingTabStrip
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/club_tab"
+                app:slidingBlock="@drawable/image_sliding_block">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/text_slidingTabTitle"
+                        android:text="Gita"/>
+                    <TextView
+                        style="@style/text_slidingTabTitle"
+                        android:text="Võ Thuật"/>
+                    <TextView
+                        style="@style/text_slidingTabTitle"
+                        android:text="Tiếng Anh"/>
+                    <TextView
+                        style="@style/text_slidingTabTitle"
+                        android:text="Boxing"/>
+                    <TextView
+                        style="@style/text_slidingTabTitle"
+                        android:text="Korean"/>
+                    <TextView
+                        style="@style/text_slidingTabTitle"
+                        android:text="French"/>
+                </LinearLayout>
+            </me.xiaopan.psts.PagerSlidingTabStrip>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpager_club"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </FrameLayout>
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</FrameLayout>

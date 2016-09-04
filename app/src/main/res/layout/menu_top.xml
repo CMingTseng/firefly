@@ -6,33 +6,36 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="7dp"
-    android:background="@drawable/customborder">
+    android:background="@drawable/customborder"
+    android:id="@+id/relative_menutop"
+    android:layout_margin="5dp">
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:id="@+id/img_icon_app"
         android:src="@drawable/icon_app"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:text="Hà Nội"
         android:id="@+id/txt_listprovince"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignBottom="@+id/img_icon_app"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:gravity="center_vertical"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="5dp"
+        android:layout_marginRight="10dp"
         android:fontFamily="sans-serif-light"
         android:textColor="@color/color_text_location"
-        android:paddingTop="5dp"
-        android:paddingRight="5dp" />
+        android:paddingTop="10dp" />
 
     <ImageView
         android:layout_width="20dp"
@@ -42,8 +45,7 @@
         android:layout_toLeftOf="@+id/txt_listprovince"
         android:layout_toStartOf="@+id/txt_listprovince"
         android:layout_alignParentTop="true"
-        android:layout_alignBottom="@+id/editText"
-        android:paddingBottom="5dp" />
+        android:layout_alignBottom="@+id/editText" />
 
     <EditText
         android:layout_width="match_parent"
@@ -51,26 +53,28 @@
         android:id="@+id/editText"
         android:layout_alignParentTop="true"
         android:background="@android:color/transparent"
-        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignBottom="@+id/img_icon_app"
         android:hint="Tìm kiếm ....."
         android:textColorHint="@color/color_text_search"
         android:paddingLeft="20dp"
         android:layout_toLeftOf="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/img_icon_app"
+        android:layout_toEndOf="@+id/img_icon_app"
         android:textSize="13sp"
-        android:paddingTop="5dp"
         android:paddingRight="20dp"
-        android:layout_marginRight="70dp" />
+        android:layout_marginRight="75dp"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp" />
 
     <ImageView
         android:layout_width="20dp"
         android:layout_height="20dp"
         android:id="@+id/imageView3"
-        android:layout_toRightOf="@+id/imageView"
-        android:layout_toEndOf="@+id/imageView"
+        android:layout_toRightOf="@+id/img_icon_app"
+        android:layout_toEndOf="@+id/img_icon_app"
         android:src="@android:drawable/ic_search_category_default"
-        android:layout_alignBottom="@+id/imageView"
-        android:layout_alignParentTop="true" />
+        android:layout_alignBottom="@+id/img_icon_app"
+        android:layout_alignParentTop="true"
+        android:paddingTop="3dp" />
 </RelativeLayout>
 </RelativeLayout>
